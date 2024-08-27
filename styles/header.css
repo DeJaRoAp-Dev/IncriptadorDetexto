@@ -1,0 +1,168 @@
+.header{
+    display: flex;
+    padding: 2px 0;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+    
+
+header .container{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    
+
+
+
+
+.logo{
+    width: 18px;
+}
+    
+    
+
+.flags{
+    display: flex;
+    gap: 21px;
+}
+
+ .flags-item img{
+    cursor: pointer;
+    display: block;
+    width: 40px;
+ }   
+
+ .flags-item:hover{
+    transform:scale(1.5);
+    filter: drop-shadow(5px -4px 18px rgb(7, 193, 250));
+
+ }
+
+
+
+
+
+
+
+.logo:hover{
+    filter: invert(47%) sepia(98%) saturate(459%) hue-rotate(147deg) brightness(96%) contrast(84%) drop-shadow(5px -4px 18px rgb(7, 193, 250));
+    transform: scale(1.8);
+
+}
+
+
+
+a{
+    text-decoration: none;
+    
+}
+
+i{
+
+    font-size: 27px;
+    cursor: pointer;
+
+}
+
+    
+
+
+
+    
+
+i:hover{
+    filter: invert(60%) sepia(78%) saturate(933%) hue-rotate(154deg) brightness(83%) contrast(94%);
+    transform: scale(1.5);
+}
+
+
+
+
+
+@media (min-width:527px){
+    .flags-item img{
+        width: 35px;
+     }   
+    
+    i{
+    font-size: 39px;
+    cursor: pointer;
+    }
+
+    
+    .logo{
+    margin-right: -35px;
+    width: 57px;
+    }    
+
+  
+
+    i:hover{
+        filter: invert(47%) sepia(98%) saturate(459%) hue-rotate(147deg) brightness(96%) contrast(84%) drop-shadow(2px -5px 8px rgb(7, 193, 250));
+    }
+
+        
+        
+    .header{
+        display: flex;
+        padding: 9px 0;
+        width: 100%;
+        align-items: center;
+    }
+
+  /*   header, .container{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 17px;
+    }
+ */
+}
+
+
+/* Vista de  desktop */
+@media (min-width:1000px){
+      .header{
+        display: flex;
+        padding: 9px 0;
+        width: 100%;
+        align-items: center;
+    }
+   
+    
+    header .container{
+        display: flex;
+        width: 100%;
+        gap: 336px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    
+    .logo{
+        margin-right: -35px;
+        padding: 16px 0;
+        width: 53px;
+        transform: scale(1.5);
+    }
+    i{
+       
+        font-size: 39px;
+        cursor: pointer;
+       }
+
+}
+
+    
+    
